@@ -7,10 +7,20 @@
   <style>
     body {
       margin: 0;
-      background: #0f0f0f;
+      background: #0f0f0f url('https://wallpaperaccess.com/full/5651987.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: white;
       font-family: sans-serif;
       overflow-x: hidden;
+    }
+
+    /* Arkaplan karartma efekti */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
     }
 
     @keyframes fadeSlideUp {
@@ -80,6 +90,13 @@
       margin-right: 8px;
     }
 
+    .spotify-player {
+      margin-top: 40px;
+      animation: fadeSlideUp 1s ease forwards;
+      animation-delay: 1.3s;
+      opacity: 0;
+    }
+
     footer {
       margin-top: 80px;
       text-align: center;
@@ -103,16 +120,21 @@
       <img src="https://cdn.discordapp.com/avatars/787475535483633684/a_1c7c83c2bafe6e8b7b3d7df7c17eb3b1.gif?size=1024" alt="Profile">
     </div>
     <h1>DARK KENZ</h1>
-    <h2>Full Stack Developer</h2>
+    <h2>Game Cheat Developer and Discord Bot Developer</h2>
     <div class="description">
       <i>💻</i>
-      <span>Discord Bot Developer</span>
+      <span>Discord Server: https://discord.gg/j4jfast</span>
     </div>
+
+    <!-- Spotify Player -->
+    <div class="spotify-player">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1lDWb6b6ieDQ2xT7ewTC3G?utm_source=generator" width="300" height="80" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+
   </div>
 
   <footer>
-    © 2025 DARK KENZ - All rights reserved. <br>
-    Want to skid this? <a href="#">Check out on GitHub</a>
+    © 2025 DARK KENZ - All rights reserved.
   </footer>
 
 </body>
